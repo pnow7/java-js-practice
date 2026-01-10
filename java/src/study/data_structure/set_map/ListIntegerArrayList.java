@@ -1,6 +1,7 @@
 package study.data_structure.set_map;
 
 import java.util.*;
+
 public class ListIntegerArrayList {
 
 	public static void main(String[] args) {
@@ -32,8 +33,6 @@ public class ListIntegerArrayList {
 		// 내림차순 정렬
 		Collections.sort(result1, Collections.reverseOrder());
 		System.out.println(result1);
-		
-
 	}
 
 }

@@ -17,7 +17,7 @@ const input = fs.readFileSync("/dev/stdin").toString().split(' ');
 // 입출력 테스트 시
 // const input = fs.readFileSync("input.txt").toString().split(' ');
 
-const A = parseInt(input[0]);
-const B = parseInt(input[1]);
+const A = Number(input[0]);
+const B = Number(input[1]);
 
 console.log(A + B);
