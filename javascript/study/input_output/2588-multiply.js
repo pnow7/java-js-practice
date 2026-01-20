@@ -17,7 +17,7 @@
 */
 
 const fs = require('fs');
-const input = fs.readFileSync("input.txt").toString().trim().split('\n');
+const input = fs.readFileSync("input.txt").toString().trim().split(/\s+/);
 // const [A, B] = fs.readFileSync("input.txt").toString().split(' ').map(Number);
 
 const A = input[0];

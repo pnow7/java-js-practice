@@ -12,6 +12,6 @@ joonas??!
 */
 
 const fs = require('fs');
-const input = fs.readFileSync("input.txt").toString().trim();
+const input = fs.readFileSync("input.txt").trim().split(/\s+/);
 
 console.log(input + "??!");

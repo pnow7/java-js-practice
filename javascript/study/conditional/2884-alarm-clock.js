@@ -16,7 +16,7 @@
 */
 
 const fs = require('fs');
-const input = fs.readFileSync("input.txt").toString().split(' ');
+const input = fs.readFileSync("input.txt").toString().trim().split(/\s+/);
 
 let hour = Number(input[0]);
 let min = Number(input[1]);

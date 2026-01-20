@@ -12,7 +12,7 @@
 
 const fs = require('fs');
 // 정답 제출 시
-const input = fs.readFileSync("/dev/stdin").toString().split(' ');
+const input = fs.readFileSync("/dev/stdin").toString().trim().split(/\s+/);
 
 // 입출력 테스트 시
 // const input = fs.readFileSync("input.txt").toString().split(' ');

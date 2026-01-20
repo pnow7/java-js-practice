@@ -16,11 +16,11 @@ A와 B를 비교하는 프로그램을 작성하시오.
 */
 
 const fs = require('fs');
-// const input = fs.readFileSync("/dev/stdin").toString().split(' ');
-const input1 = fs.readFileSync("input.txt").toString().split(' ');
+// const input = fs.readFileSync('/dev/stdin').toString().trim().split(/\s+/);
+const input = fs.readFileSync('input.txt').toString().trim().split(/\s+/);
 
-const A = Number(input1[0]);
-const B = Number(input1[1]);
+const A = Number(input[0]);
+const B = Number(input[1]);
 
 if (A > B) {
     console.log(">");

@@ -9,7 +9,7 @@
 */
 
 const fs = require('fs');
-const input = fs.readFileSync("/dev/stdin").toString().split(' ');
+const input = fs.readFileSync("/dev/stdin").toString().trim().split(/\s+/);
 // const input = fs.readFileSync("input.txt").toString().split(' ');
 
 const A = Number(input[0]);

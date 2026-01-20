@@ -20,17 +20,18 @@ const input = fs.readFileSync("input.txt").toString().trim().split(/\s+/).map(Nu
 let result = [];
 
 for (let i = 0; i < input.length; i+=2) {
-    let hour = input[i];
-    let min = input[i + 1];
+    const [hour, min] = [input[i], input[i + 1]];
 
-    if (min < 45) {
-        hour = (hour + 23) % 24;
-        min += 60;
+    let h = hour;
+    let m = min;
+
+    if (m < 45) {
+        h = (h + 23) % 24;
+        m += 60;
     }
 
-    min -= 45;
-
-    result.push(hour + " " + min);
+    m -= 45;
+    result.push(h + " " + m);
 }
 
 console.log(result.join('\n'));
