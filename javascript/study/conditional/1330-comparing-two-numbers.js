@@ -16,7 +16,6 @@ A와 B를 비교하는 프로그램을 작성하시오.
 */
 
 const fs = require('fs');
-// const input = fs.readFileSync('/dev/stdin').toString().trim().split(/\s+/);
 const input = fs.readFileSync('input.txt').toString().trim().split(/\s+/);
 
 const A = Number(input[0]);
