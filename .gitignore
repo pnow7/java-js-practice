@@ -11,3 +11,5 @@ bin/
 # OS
 .DS_Store
 Thumbs.db
+
+.txt
