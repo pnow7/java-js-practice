@@ -29,7 +29,7 @@ console.log(input.charCodeAt(0));
 
 
 - 타입 확인 기본
-: typeof
+: typeof 값, typeof(값)
 
 - 정수 확인
 : Number.isInteger(값)
