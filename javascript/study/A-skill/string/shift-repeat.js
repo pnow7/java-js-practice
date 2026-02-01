@@ -33,7 +33,7 @@ for (let i = 0; i < T; i++) {
 
 /*
 split(""): 문자열을 배열로 변환
-ex) "ABC".split("") → ['A', 'B', 'C']
+ex) "ABC".split("") → ['A', 'B', 'C'] (배열로 돼서 map 사용 가능)
 
 join(""): 다시 하나의 문자열로 합치기
 ex) ['AAA', 'BBB', 'CCC'].join("") → "AAABBBCCC"
