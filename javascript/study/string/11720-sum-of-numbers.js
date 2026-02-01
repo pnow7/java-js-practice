@@ -19,7 +19,7 @@ const N = Number(input[0]);
 
 let sum = 0;
 for (let i = 1; i <= N; i++) {
-    let num = Number(input[1].slice(i - 1, i));
+    const num = Number(input[1].slice(i - 1, i));
     sum += num;
 }
 
