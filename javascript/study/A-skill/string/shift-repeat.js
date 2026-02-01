@@ -30,3 +30,11 @@ for (let i = 0; i < T; i++) {
 
     console.log(result);
 }
+
+/*
+split(""): 문자열을 배열로 변환
+ex) "ABC".split("") → ['A', 'B', 'C']
+
+join(""): 다시 하나의 문자열로 합치기
+ex) ['AAA', 'BBB', 'CCC'].join("") → "AAABBBCCC"
+*/
