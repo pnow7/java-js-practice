@@ -15,7 +15,7 @@ N개의 숫자가 공백 없이 쓰여있다.
 const fs = require('fs');
 const input = fs.readFileSync("input.txt").toString().trim().split(/\s+/)
 
-// 배열로 쳐만들기
+// split(""): 배열로 쳐만들기, reduce: 합쳐서 쳐 더하기
 const num = input[1].split("");
 const result = num.map(Number).reduce((acc, cur) => acc + cur, 0);
 const result2 = num.reduce((acc, cur) => acc + Number(cur), 0);
