@@ -37,6 +37,11 @@ const dial = {
     "U": 8, "V": 8, "W": 9, "X": 9, "Y": 9,
     "Z": 9
 }
-const totalTime = input[0].split("").map(num => dial[num] + 1).reduce((acc, cur) => acc + cur);
+const totalTime = input[0].split("").map(
+    num => dial[num] + 1).reduce((acc, cur) => acc + cur);
 
 console.log(totalTime);
+
+/*
+- map과 reduce는 보통 같이 쓸 일이 많음
+*/
