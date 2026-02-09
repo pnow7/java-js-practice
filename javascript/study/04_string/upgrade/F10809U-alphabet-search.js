@@ -27,8 +27,11 @@ input.split('').forEach((ch, i) => {
 console.log(result.join(' '));
 
 /*
-ch.charCodeAt(0) - 97;
-: 여기서 0인 이유
+- ch.charCodeAt(0) - 97;
+: 여기서 0인 이유 (97 = a, 65 = A)
 
 ch가 'b', 'a' ... ~ 이렇게 들어가기때문
+
+- String.fromCharCode(숫자)
+: 이렇게 단독으로 많이 쓰임
 */
