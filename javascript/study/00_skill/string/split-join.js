@@ -31,21 +31,6 @@ nljj
 */
 
 const fs = require('fs');
-let input = fs.readFileSync("input.txt").toString().trim();
-const croatia = ["c=", "c-", "dz=", "d-", "lj", "nj", "s=", "z="];
-
-// for (const ch of croatia) {
-//     input = input.replaceAll(ch, "X");
-// }
-
-const result = croatia.reduce((acc, ch) => {
-    return acc.replaceAll(ch, "X");
-}, input);
-
-console.log(result.length);
-
-/* input이 let이다
-const fs = require('fs');
 const input = fs.readFileSync("input.txt").toString().trim();
 const croatia = ["c=", "c-", "dz=", "d-", "lj", "nj", "s=", "z="];
 
@@ -56,4 +41,3 @@ for (const ch of croatia) {
 }
 
 console.log(result.length);
-*/

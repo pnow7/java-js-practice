@@ -30,7 +30,6 @@ nljj
 3
 */
 
-
 const fs = require('fs');
 let input = fs.readFileSync("input.txt").toString().trim();
 const croatia = ["c=", "c-", "dz=", "d-", "lj", "nj", "s=", "z="];
@@ -43,4 +42,4 @@ const result = croatia.reduce((acc, ch) => {
     return acc.replaceAll(ch, "X");
 }, input);
 
-console.log(result);
+console.log(result.length);

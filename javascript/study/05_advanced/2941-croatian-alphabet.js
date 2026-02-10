@@ -30,17 +30,17 @@ nljj
 3
 */
 
-
 const fs = require('fs');
-let input = fs.readFileSync("input.txt").toString().trim();
+const input = fs.readFileSync("input.txt").toString().trim();
 const croatia = ["c=", "c-", "dz=", "d-", "lj", "nj", "s=", "z="];
 
-// for (const ch of croatia) {
-//     input = input.replaceAll(ch, "X");
-// }
+let result = input;
+for (const ch of croatia) {
+    result = result.replaceAll(ch, "X");
+}
 
-const result = croatia.reduce((acc, ch) => {
-    return acc.replaceAll(ch, "X");
-}, input);
+// const result = croatia.reduce((acc, ch) => {
+//     return acc.replaceAll(ch, "X");
+// }, input);
 
-console.log(result);
+console.log(result.length);
